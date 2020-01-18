@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title><?php wp_title( ' | ', true, 'right' ); ?></title>
-        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-        <?php wp_head(); ?>
-    </head>
-    <body <?php body_class(); ?>>
+<!DOCTYPE html><!--htmlで書かれていることを宣言-->
+<html lang="ja"><!--日本語のサイトであることを指定-->
+<head>
+<meta charset="utf-8"><!--エンコードがUTF-8であることを指定-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0 "><!--viewportの設定-->
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"><!--スタイルシートの呼び出し-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"><!--font-awesomeのスタイルシートの呼び出し-->
  
-        <header class="page-header">
-            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Sunshine Blog" width="227" height="33"></a></h1>
-        </header>
+<?php wp_head(); ?><!--システム・プラグイン用-->
+</head>
+<body <?php body_class(); ?>>
+<header>
+  <div class="header-inner">
+ 
+  </div><!--end header-inner-->
+</header>
